@@ -1,8 +1,9 @@
+// Header.tsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const App = () => {
+const Header: React.FC = () => {
   return (
-    <div className="bg-gradient-to-tl from-black via-gray-500 to-black h-screen">
     <header className=" bg-gradient-to-tl from-black via-gray-700 to-black px-4 py-6 shadow-lg flex items-center justify-between">
       {/* Left Section - Logo */}
       <div className="items-center flex flex-col">
@@ -12,9 +13,9 @@ const App = () => {
 
       {/* Center Section - Navigation Options */}
       <nav className="absolute left-1/2 transform -translate-x-1/2">
-        <a href="#" className="text-white mx-4 hover:text-gray-300">NEWS</a>
-        <a href="#" className="text-white mx-4 hover:text-gray-300">ARTICLE</a>
-        <a href="#" className="text-white mx-4 hover:text-gray-300">COMMUNITY</a>
+       <Link to="/news" className="text-white mx-4 hover:text-gray-300">NEWS</Link>
+        <Link to="/article" className="text-white mx-4 hover:text-gray-300">ARTICLE</Link>
+        <Link to="/community" className="text-white mx-4 hover:text-gray-300">COMMUNITY</Link>
       </nav>
 
       {/* Right Section - Logout */}
@@ -22,8 +23,7 @@ const App = () => {
         <span className="text-white cursor-pointer hover:text-gray-300">Logout</span>
       </div>
     </header>
-    </div>
   );
 };
 
-export default App;
+export default Header;
