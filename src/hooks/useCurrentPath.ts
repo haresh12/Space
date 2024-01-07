@@ -1,6 +1,13 @@
+import { ROUTES } from "../utils";
 import { matchRoutes, useLocation } from "react-router-dom";
 
-const routes = [{ path: "/" }];
+const routes = [
+  { path: ROUTES.MAIN },
+  { path: ROUTES.VIDEOS },
+  { path: ROUTES.NEWS },
+  { path: ROUTES.ARTICLE },
+  { path: ROUTES.COMMUNITY },
+];
 
 const useCurrentPath = () => {
   const location = useLocation();

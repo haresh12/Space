@@ -1,28 +1,39 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Community, Videos, News, Article, Header } from './components';
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  Community,
+  Videos,
+  News,
+  Article,
+  Header,
+  Launches,
+} from "./components";
 
 // Separate routing configuration
 const routes = [
   {
-    path: '/',
+    path: "/",
     element: <Header />,
     children: [
       {
-        path: '/news',
-        element: <News/>,
+        path: "/news",
+        element: <News />,
       },
       {
-        path: '/article',
+        path: "/article",
         element: <Article />,
       },
       {
-        path: '/community',
+        path: "/community",
         element: <Community />,
       },
       {
-        path: '/videos',
+        path: "/videos",
         element: <Videos />,
+      },
+      {
+        path: "/launches",
+        element: <Launches />,
       },
     ],
   },
@@ -30,14 +41,12 @@ const routes = [
 
 const router = createBrowserRouter(routes);
 
-
 const App = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <RouterProvider router={router} />
     </div>
   );
 };
-
 
 export default App;
