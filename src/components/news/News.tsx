@@ -2,7 +2,7 @@ import React from "react";
 
 const News = () => {
   return (
-    <div className="bg-gradient-to-tl from-gray-950  via-gray-400 to-gray-950 px-4 py-6 shadow-lg flex flex-col items-center overflow-y-auto">
+    <div className="bg-gradient-to-tl from-black via-gray-700 to-black px-4 py-6 shadow-lg flex flex-col items-center overflow-y-auto">
       <div className="shadow-2xl rounded-xl h-[220px]  w-3/4 mt-[96px] bg-[#f1f2f5] p-2 flex flex-row">
         <img
           alt="newsIcon"
