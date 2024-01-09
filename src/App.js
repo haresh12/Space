@@ -7,6 +7,7 @@ import {
   Article,
   Header,
   Launches,
+  NewDetails,
 } from "./components";
 
 // Separate routing configuration
@@ -36,6 +37,10 @@ const routes = [
         element: <Launches />,
       },
     ],
+  },
+  {
+    path: "/news-details",
+    element: <NewDetails />,
   },
 ];
 
