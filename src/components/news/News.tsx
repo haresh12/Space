@@ -1,9 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../utils";
 
 const News = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-gradient-to-tl from-black via-gray-700 to-black px-4 py-6 shadow-lg flex flex-col items-center overflow-y-auto">
-      <div className="shadow-2xl rounded-xl h-[220px]  w-3/4 mt-[96px] bg-[#f1f2f5] p-2 flex flex-row">
+      <div
+        className="shadow-2xl rounded-xl h-[220px]  w-3/4 mt-[96px] bg-[#f1f2f5] p-2 flex flex-row"
+        onClick={() => {
+          navigate(ROUTES.NEWS_DETAILS);
+        }}
+      >
         <img
           alt="newsIcon"
           src="https://www.aljazeera.com/wp-content/uploads/2024/01/AP23245293856495-1704558457.jpg?resize=770%2C513&quality=80"
