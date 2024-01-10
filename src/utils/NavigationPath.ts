@@ -5,4 +5,5 @@ export const ROUTES = {
   VIDEOS: "./videos",
   COMMUNITY: "./community",
   NEWS_DETAILS: "/news-details",
+  ARTICLE_DETAILS: "/article-details",
 };

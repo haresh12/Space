@@ -1,9 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../utils";
 
 const Article = () => {
+  const navigate = useNavigate();
+
   return (
     <div className=" overflow-y-auto  bg-gradient-to-tl from-gray-950  via-gray-400 to-gray-950 py-[16px] pt-[96px] shadow-lg flex flex-wrap items-center justify-center">
-      <div className="bg-[#f1f2f5] h-[320px] w-[320px] shadow-2xl mt-[16px] rounded-xl flex flex-col mx-[40px]">
+      <div
+        className="bg-[#f1f2f5] h-[320px] w-[320px] shadow-2xl mt-[16px] rounded-xl flex flex-col mx-[40px]"
+        onClick={() => navigate(ROUTES.ARTICLE_DETAILS)}
+      >
         <img
           alt="articalIcon"
           className="h-[230px] w-[400px] rounded-t-xl"
