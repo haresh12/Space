@@ -6,3 +6,4 @@ export * from "./videos";
 export * from "./navbar";
 export * from "./launches";
 export * from "./news-details";
+export * from "./article-details";
