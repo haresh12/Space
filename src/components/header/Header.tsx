@@ -19,11 +19,6 @@ const Header = () => {
           </span>
         </div>
         <Navbar />
-        <div>
-          <span className="text-white cursor-pointer hover:text-gray-300">
-            Logout
-          </span>
-        </div>
       </header>
       <Outlet />
       {path === ROUTES.MAIN && <News />}
