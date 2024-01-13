@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../utils";
 
 const Launches = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="overflow-y-auto  bg-gradient-to-tl from-gray-950  via-gray-400 to-gray-950 py-[16px] pt-[96px] shadow-lg flex flex-wrap items-center justify-center">
       <div className="bg-[#f1f2f5]  pb-3 w-[320px] shadow-2xl mt-[16px] rounded-xl flex flex-col mx-[40px]">
@@ -24,7 +28,7 @@ const Launches = () => {
         <span
           className=" mx-2 mt-1 font-semibold text-[#1805f0] cursor-pointer"
           onClick={() => {
-            alert("WE WILL SHOW DETAILS HERE");
+            navigate(ROUTES.LAUNCH_DETAILS);
           }}
         >
           Details
