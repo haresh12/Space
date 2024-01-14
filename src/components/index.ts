@@ -8,3 +8,4 @@ export * from "./launches";
 export * from "./news-details";
 export * from "./article-details";
 export * from "./launch-details";
+export * from "./events";
