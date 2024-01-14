@@ -10,6 +10,7 @@ import {
   NewDetails,
   ArticleDetails,
   LaunchDetails,
+  Events,
 } from "./components";
 
 // Separate routing configuration
@@ -37,6 +38,10 @@ const routes = [
       {
         path: "/launches",
         element: <Launches />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
       },
     ],
   },
