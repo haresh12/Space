@@ -91,15 +91,6 @@ const LaunchDetails = () => {
         <span className=" font-light text-gray-400 my-4  uppercase">
           Low earth orbit
         </span>
-        <div className=" w-full h-[1px] bg-gray-200" />
-        <span
-          className=" mx-2 mt-4 font-semibold text-[#1805f0] cursor-pointer justify-end self-end"
-          onClick={() => {
-            alert("WE WILL SHOW DETAILS HERE");
-          }}
-        >
-          Details
-        </span>
       </div>
       <div className=" text-2xl my text-cyan-50 mx-[202px] my-5 justify-center">
         Stats
