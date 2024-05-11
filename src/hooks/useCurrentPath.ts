@@ -18,7 +18,7 @@ const useCurrentPath = () => {
     return currentRoute.path;
   }
 
-  return "";
+  return undefined;
 };
 
 export default useCurrentPath;
